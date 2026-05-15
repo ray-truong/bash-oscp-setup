@@ -42,7 +42,7 @@ echo -e "================================================================\n";
 echo ""
 echo -e "Begginning TCP nmap scan:\n"
 
-nmap -sV -sC "$IP" -v --open -oA tcp_nmap/"$tcp_nmap" 
+nmap "$IP" -p- -sV -sC -v --open -oA tcp_nmap/"$tcp_nmap" 
 
 echo ""
 echo -e "================================================================\n";
